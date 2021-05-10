@@ -1,5 +1,6 @@
 import java.util.Set;
 import java.util.HashMap;
+
 public class HashMapFun {
     public static void listForm(){
         HashMap<String, String> userMap = new HashMap<String, String>();
