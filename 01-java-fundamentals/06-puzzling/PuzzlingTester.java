@@ -9,5 +9,9 @@ public class PuzzlingTester{
         puzzle.sumAndGreater(arr);
         puzzle.names(names);
         puzzle.alphabet();
+        puzzle.randArray();
+        puzzle.sortArray();
+        puzzle.randString();
+        puzzle.stringArray();
     }
 }

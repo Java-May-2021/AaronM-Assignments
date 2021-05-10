@@ -40,10 +40,63 @@ public class Puzzling {
         String message = "The first letter is not a vowel. The last letter is ";
 
         String vowels = "aeiouy";
-        int a = vowels.indexOf(alphabet.get(0));
+        int firstLetter = vowels.indexOf(alphabet.get(0));
 
-        if(a > -1)
+        if(firstLetter > -1)
             message = "The first letter is a vowel. The last letter is ";
-        System.out.print(message + alphabet.get(25));
+        System.out.println(message + alphabet.get(25));
     }
+
+    public static void randArray() {
+        int[] numList = new int[10];
+        Random r = new Random();
+        for(int i = 0; i < 10; i++){
+            numList[i] =r.nextInt(46)+55;
+        }
+        System.out.println(Arrays.toString(numList));
+    }
+
+    public static void sortArray(){
+        int[] numList = new int[10];
+        Random r = new Random();
+        for(int i = 0; i < 10; i++){
+            numList[i] =r.nextInt(46)+55;
+        }
+        Arrays.sort(numList);
+        System.out.println(Arrays.toString(numList));
+        System.out.println("The Minimum is: " + numList[0]);
+        System.out.println("The Maximum is: " + numList[9]);
+    }
+
+    public static void randString() {
+        String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        Random rnd = new Random();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < 5; i++){
+            int index = rnd.nextInt(chars.length());
+            char randomChar = chars.charAt(index);
+            sb.append(randomChar);
+        }
+        String randomString = sb.toString();
+        System.out.println(randomString);
+    }
+
+    public static void stringArray(){
+        String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        Random rnd = new Random();
+        String[] stringArray = new String[10];
+        for(int j = 0; j < 10; j++){
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < 5; i++){
+                int index = rnd.nextInt(chars.length());
+                char randomChar = chars.charAt(index);
+                sb.append(randomChar);
+            }
+        String randomString = sb.toString();
+        stringArray[j] = randomString;
+        }
+        System.out.println(Arrays.toString(stringArray));
+
+    }
+
 }
