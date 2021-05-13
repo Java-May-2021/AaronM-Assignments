@@ -9,6 +9,10 @@ public class Wizard extends Human {
     }
     public void fireball(Human target){
         target.health -= this.intelligence * 3;
-        System.out.println("Wizard attacked with Fireball! Enemey took " + this.intelligence*3 + " damage!");
+        System.out.println("Wizard attacked with Fireball! Enemy took " + this.intelligence*3 + " damage!");
+    }
+    public void attackEnemy(Human target){
+        target.health -=this.strength;
+        System.out.println("Attack hits for "+ this.strength + " damage. Enemy has " + target.health + " health remaining.");
     }
 }

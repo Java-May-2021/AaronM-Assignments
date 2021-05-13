@@ -12,7 +12,7 @@ public class Ninja extends Human {
         System.out.println("Ninja ran away and now has "+ this.health + " health.");
         }
     }
-    public void steal(Human target){
+    public void steal(target){
         target.health -= this.stealth;
         this.health += this.stealth;
         System.out.println("Ninja performed! Enemy took "+this.stealth+" damage. Ninja gained " + this.stealth + " health!");

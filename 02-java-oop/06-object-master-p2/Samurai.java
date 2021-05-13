@@ -15,4 +15,8 @@ public class Samurai extends Human {
         this.health = (this.health/2);
         System.out.println("Samurai attacked with Death Blow! Enemy killed. Samurai took " + this.health + " damage!");
     }
+    public void attackEnemy(Human target){
+        target.health -=this.strength;
+        System.out.println("Attack hits for "+ this.strength + " damage. Enemy has " + target.health + " health remaining.");
+    }
 }

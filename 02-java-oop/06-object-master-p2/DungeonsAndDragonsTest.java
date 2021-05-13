@@ -7,13 +7,13 @@ class DungeonsAndDragonsTest{
         // aragorn.attackEnemy(enemy);
         aragorn.displayStats();
         Wizard gandalf = new Wizard();
-        // gandalf.attackEnemy(enemy);
+        gandalf.attackEnemy(enemy);
         gandalf.heal(aragorn);
         gandalf.fireball(enemy);
         gandalf.displayStats();
         aragorn.displayStats();
         Samurai jack = new Samurai();
-        // jack.attackEnemy(enemy);
+        jack.attackEnemy(enemy);
         jack.meditate();
         jack.deathBlow(enemy);
         jack.displayStats();
