@@ -1,7 +1,10 @@
 public class Samurai extends Human {
+    private static int samNum = 0;
     public Samurai() {
 		this.health= 200;
         this.strength = 7;
+        samNum +=1;
+        System.out.println("There are " + samNum + " Samurai in this dojo!");
 	}
     public void meditate(){
         this.health += this.health*.5;

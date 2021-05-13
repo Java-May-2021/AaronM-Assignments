@@ -12,6 +12,7 @@ class DungeonsAndDragonsTest{
         gandalf.fireball(enemy);
         gandalf.displayStats();
         aragorn.displayStats();
+        Samurai john = new Samurai();
         Samurai jack = new Samurai();
         jack.attackEnemy(enemy);
         jack.meditate();
