@@ -4,6 +4,11 @@ public class Human{
     protected int stealth = 3;   
     protected int intelligence = 3;
 
+    public void attackEnemy(Human target){
+        target.health -=this.strength;
+        System.out.println("Attack hits for "+ this.strength + " damage. Enemy has " + target.health + " health remaining.");
+    }
+
     public void displayStats(){
         System.out.println("Your Character Stats ");
         System.out.println("              Health: " + health);

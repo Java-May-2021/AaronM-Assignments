@@ -2,13 +2,11 @@ public class Human{
     protected int health = 100;
     protected int strength = 3;
     protected int stealth = 3;   
-    protected int intelligence = 3;    
-    protected int enemyHealth = 100;
+    protected int intelligence = 3;
 
-
-    public void attackEnemey(){
-        this.enemyHealth -=this.strength;
-        System.out.println("Attack hits for "+ this.strength + " damage. Enemy has " + this.enemyHealth + " health remaining.");
+    public void attackEnemy(Human target){
+        target.health -=this.strength;
+        System.out.println("Attack hits for "+ this.strength + " damage. Enemy has " + target.health + " health remaining.");
     }
 
     public void displayStats(){
