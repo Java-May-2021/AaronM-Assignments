@@ -1,0 +1,31 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: OldLace;
+}
+h1 {
+	color: orange;
+}
+.building {
+	padding: 10px;
+	display: inline-block;
+	border: 5px solid black;
+	text-align: center;
+	width: 169px;
+}
+
+.activities {
+	width: 800px;
+	border: 5px solid black;
+	overflow-y: auto;
+	max-height: 200px;
+	min-height: 100px;
+}
+
+.green {
+	color: green;
+}
+
+.red {
+	color: red;
+}
