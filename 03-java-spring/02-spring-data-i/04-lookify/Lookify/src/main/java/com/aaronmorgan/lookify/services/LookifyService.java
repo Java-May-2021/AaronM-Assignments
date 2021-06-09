@@ -30,10 +30,10 @@ public class LookifyService {
 	}
 	
 //	Display Top 10
-//	public List<Song> topTen(){
-//		return lRepo.findTopTen();
-//	}
-//	
+	public List<Song> topTen(){
+		return lRepo.findTop10ByOrderByRatingDesc();
+	}
+	
 	
 	//Search by Artist
 	public List<Song> songsByArtist(String artist){

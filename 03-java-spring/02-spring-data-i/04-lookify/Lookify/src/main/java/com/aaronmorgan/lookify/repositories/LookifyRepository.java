@@ -11,5 +11,5 @@ import com.aaronmorgan.lookify.models.Song;
 public interface LookifyRepository extends CrudRepository<Song, Long>{
 	List<Song> findAll();
 	List<Song> findByArtist(String artist);
-//	List<Song> findTopTen();
+	List<Song> findTop10ByOrderByRatingDesc();
 }

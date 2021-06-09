@@ -42,11 +42,11 @@ public class LookifyController {
 		return "search.jsp";
 	}	
 	
-//	@RequestMapping("/topTen")
-//	public String TopTen(Model model) {
-//		model.addAttribute("songs", lService.topTen());
-//		return "/top10.jsp";
-//	}
+	@RequestMapping("/top10")
+	public String TopTen(Model model) {
+		model.addAttribute("songs", lService.topTen());
+		return "top10.jsp";
+	}
 	
 	
 	@GetMapping("/new")
