@@ -29,13 +29,13 @@
 						<tr>
 							<td>${question.id}</td>
 							<td>${question.question}</td>
-    						<td><c:forEach items="${question.tags}" var="tag"><c:out value="1 "/></c:forEach></td>
+    						<td><c:forEach items="${question.tags}" var="tag"><c:out value="${tag.subject}"/></c:forEach></td>
 							<td><a href="/questions/${question.id}">Answer</a></td>
 						</tr>
 					</c:forEach>	
 				</tbody>				
 			</table>
-			<h3><a href="questions/new">Add a Question</a></h3>
+			<h3><a href="/questions/new">Add a Question</a></h3>
 		</div>
 	</body>
 </html>

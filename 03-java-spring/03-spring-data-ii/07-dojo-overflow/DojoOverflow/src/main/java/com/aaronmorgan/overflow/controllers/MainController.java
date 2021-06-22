@@ -53,10 +53,12 @@ public class MainController {
 	
 	@PostMapping("/questions/answers")
 	public String addAnswer(@Valid @ModelAttribute("a") Answer answer, BindingResult result, Model model, Long id) {
+		Long questionId = answer.getQuestion().getId();
+		
 			if(result.hasErrors()) {
 				return "oneQuestion.jsp";
 			}
 			this.qService.createAnswer(answer);
-			return "redirect:/questions/";
+			return "redirect:/questions/" + questionId;
 	}
 }

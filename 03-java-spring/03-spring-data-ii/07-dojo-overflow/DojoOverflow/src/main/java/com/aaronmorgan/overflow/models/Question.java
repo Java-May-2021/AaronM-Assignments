@@ -100,12 +100,16 @@ public class Question {
 		this.updatedAt = updatedAt;
 	}
 
-	public String getTags() {
-		return stTags;
+	public List<Tag> getTags() {
+		return tags;
 	}
 
 	public void setTags(List<Tag> tags) {
 		this.tags = tags;
+	}
+
+	public void setStTags(String stTags) {
+		this.stTags = stTags;
 	}
 
 	public String getStTags() {

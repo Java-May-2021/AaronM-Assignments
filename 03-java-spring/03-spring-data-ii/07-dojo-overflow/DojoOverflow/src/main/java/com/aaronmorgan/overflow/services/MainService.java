@@ -37,7 +37,7 @@ public class MainService {
 	//Create
 	public Question createQuestion(Question question) {
 		ArrayList<Tag> questionsTags = new ArrayList<Tag>();
-		String tags = question.getTags();
+		String tags = question.getStTags();
 		
 		String[] qTags = tags.split(",");
 		
@@ -56,7 +56,7 @@ public class MainService {
 		}
 		
 		Question newQuestion = new Question(question.getQuestion(), questionsTags);
-		return this.qRepo.save(null);
+		return this.qRepo.save(newQuestion);
 	}
 	
 // TAGS

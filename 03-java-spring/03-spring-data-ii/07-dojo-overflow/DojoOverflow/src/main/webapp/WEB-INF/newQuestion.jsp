@@ -23,9 +23,9 @@
 		        <form:textarea class="form-control" path="question"></form:textarea>
 		    </div>
 		    <div class="form-group">
-		        <form:label path="tags">Tags</form:label>
-		        <form:errors path="tags"/>
-		        <form:input class="form-control" path="tags"/>
+		        <form:label path="stTags">Tags</form:label>
+		        <form:errors path="stTags"/>
+		        <form:input class="form-control" path="stTags"/>
 		    </div>
 		    <button>Submit</button>
 		</form:form>
